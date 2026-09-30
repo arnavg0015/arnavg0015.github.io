@@ -129,6 +129,7 @@
     .pub-title { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; line-height: 1.45; }
     .pub-venue { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--accent); margin-bottom: 0.2rem; }
     .pub-authors { font-size: 0.82rem; color: var(--text-faint); }
+    .pub-desc { font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin-top: 0.35rem; }
 
     /* Awards */
     .awards-list { display: flex; flex-direction: column; gap: 0.55rem; }
@@ -137,6 +138,8 @@
     .award-year { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--text-faint); text-align: right; padding-top: 0.12rem; }
 
     /* Skills */
+    .skills-groups { display: flex; flex-direction: column; gap: 1rem; }
+    .skills-group-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--text-muted); margin-bottom: 0.4rem; }
     .skills-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
     footer { margin-top: 4rem; font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--text-faint); text-align: center; }
@@ -161,7 +164,7 @@
       <h1>Arnav Gupta</h1>
       <p class="subtitle">
         BME &amp; ECE @ Duke '29 &nbsp;·&nbsp; 37th IYPT Hong Kong Captain<br/>
-        Building Tools for Cell Biology, Medical Devices &amp; Global Health
+        Medical Devices, Neuroengineering &amp; Global Health
       </p>
       <nav class="links" aria-label="Social links">
         <a href="https://www.linkedin.com/in/arnav-gupta-duke/" target="_blank" rel="noopener">
@@ -176,7 +179,7 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.49 2 2 0 0 1 3.59 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l1.77-1.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           +1 (919) 408-1561
         </a>
-        <a href="https://drive.google.com/file/d/1OUJPiBRelKYwE3WO1PxXHtUcJAJN4aJC/view?usp=sharing" target="_blank" rel="noopener">
+        <a href="https://drive.google.com/file/d/1xgJ7bvRM48o8ubIyio1j7r8nzs0cFRRL/view?usp=sharing" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           CV
         </a>
@@ -194,7 +197,7 @@
     <p class="section-label" id="about-label">About</p>
     <div class="bio">
       <p>
-        I'm a rising sophomore studying Biomedical Engineering and Electrical &amp; Computer Engineering at Duke University and am passionate about leveraging medical device design, translational medicine, and computational biology in addressing patient needs. As a dedicated researcher at a number of institutions, and a leader in my professional community, I take great pride in the 3 core principles: leadership, diligence, and empathy which drives me to advance healthcare technologies.
+        I'm a sophomore studying Biomedical Engineering and Electrical &amp; Computer Engineering (minor in Neuroscience) at Duke University and am passionate about leveraging medical device design, translational medicine, and computational biology in addressing patient needs. From a $5 gastroschisis device for infants in Uganda to an EMG-controlled prosthetic and neuroimaging pipelines, my work sits at the intersection of hardware, computation, and patient need. As a researcher across several institutions and a leader in my engineering community, I take great pride in the 3 core principles: leadership, diligence, and empathy which drives me to advance healthcare technologies.
       </p>
     </div>
   </section>
@@ -207,12 +210,33 @@
     <div class="timeline">
 
       <div class="entry">
+        <div class="entry-date">Aug 2026<br/>Present</div>
+        <div class="entry-body">
+          <div class="entry-org">Duke Bass Connections</div>
+          <div class="entry-role">Medical Device Engineer</div>
+          <div class="entry-desc">
+            Designing a medical-grade gastroschisis device for infants in Uganda at a projected <strong>$5 per unit</strong>, versus $607 for imported alternatives, across 11 design iterations.
+            <ul>
+              <li>Defining requirements for local manufacture, sterilisation, and biocompatibility to support Uganda National Drug Authority approval.</li>
+              <li>Collaborating cross-functionally with Duke School of Medicine, Makerere University, and ShiShi International to select materials, evaluate manufacturing methods (e.g. silicone moulding), and document design inputs and bench-test results.</li>
+            </ul>
+          </div>
+          <div class="tags"><span class="tag">Medical Devices</span><span class="tag">Global Health</span><span class="tag">Uganda</span><span class="tag">Design Controls</span></div>
+        </div>
+      </div>
+
+      <div class="entry">
         <div class="entry-date">May 2026<br/>Present</div>
         <div class="entry-body">
           <div class="entry-org">Duke Institute for Brain Sciences</div>
-          <div class="entry-role">Undergraduate Research Intern</div>
-          <div class="entry-desc">Conducting research at DIBS, exploring neuroscience from an engineering perspective.</div>
-          <div class="tags"><span class="tag">Neuroscience</span></div>
+          <div class="entry-role">Neurocomputational Researcher &nbsp;·&nbsp; Advisor: Prof. Andrew M. Michael</div>
+          <div class="entry-desc">
+            <ul>
+              <li>Achieved <strong>97% accuracy</strong> classifying sex from multimodal brain connectivity across 1,037 Human Connectome Project subjects by fusing fMRI and DTI features with partial least squares and training CNN and regression models.</li>
+              <li>Built and open-sourced a Python toolbox that computes 23 structural and functional MRI metrics benchmarked against HCP normative means, cutting per-subject analysis from 9 hours to 15 minutes.</li>
+            </ul>
+          </div>
+          <div class="tags"><span class="tag">Neuroscience</span><span class="tag">fMRI / DTI</span><span class="tag">CNNs</span><span class="tag">Open Source</span></div>
         </div>
       </div>
 
@@ -221,20 +245,8 @@
         <div class="entry-body">
           <div class="entry-org">Stealth Startup</div>
           <div class="entry-role">Founder &amp; CTO &nbsp;·&nbsp; Raleigh-Durham Area</div>
-          <div class="entry-desc">Co-founding and leading technical development of a stealth-stage startup.</div>
-          <div class="tags"><span class="tag">Founder</span><span class="tag">CTO</span></div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">May 2026<br/>Present</div>
-        <div class="entry-body">
-          <div class="entry-org">Duke Bass Connections</div>
-          <div class="entry-role">Undergraduate Engineer</div>
-          <div class="entry-desc">
-            Prototyping an ultra-low-cost medical-grade device to address Gastroschisis in neonates that can be manufactured locally, safely sterilised, and approved by the Uganda National Drug Authority — in partnership with Duke School of Medicine, Makerere University, and ShiShi International.
-          </div>
-          <div class="tags"><span class="tag">Medical Devices</span><span class="tag">Global Health</span><span class="tag">Uganda</span><span class="tag">Prototyping</span></div>
+          <div class="entry-desc">Co-founding and leading technical development of a stealth-stage startup. Participant in 2026 Y Combinator Startup School.</div>
+          <div class="tags"><span class="tag">Founder</span><span class="tag">CTO</span><span class="tag">YC Startup School</span></div>
         </div>
       </div>
 
@@ -256,9 +268,25 @@
           <div class="entry-org">Duke MEDesign</div>
           <div class="entry-role">Project Team Lead</div>
           <div class="entry-desc">
-            Leading a mechanical team of seven undergraduates to design a novel, low-cost stabilising system to streamline internal gastrointestinal endoscopic procedures — including an endoscopy head stabilisation system with a biocompatible deployment and retraction mechanism alongside gyroscopic and force sensor integration.
+            Leading a 7-engineer mechanical team designing a low-cost GI endoscopy anchor targeting <strong>30% lower cost</strong> than existing solutions — developing a biocompatible deployment and retraction mechanism in SolidWorks and bench-testing anchoring force to streamline internal gastrointestinal endoscopic procedures.
           </div>
-          <div class="tags"><span class="tag">CAD/CAM</span><span class="tag">Endoscopy</span><span class="tag">Team Lead</span><span class="tag">Medical Devices</span></div>
+          <div class="tags"><span class="tag">SolidWorks</span><span class="tag">Endoscopy</span><span class="tag">Team Lead</span><span class="tag">Medical Devices</span></div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Sep 2025<br/>Present</div>
+        <div class="entry-body">
+          <div class="entry-org">Duke eNABLE</div>
+          <div class="entry-role">Project Leyman Team Lead</div>
+          <div class="entry-desc">
+            Leading mechanical design of an EMG-controlled upper-limb prosthetic for a client with limited arm function, directing a 6-person sub-team.
+            <ul>
+              <li>Achieved <strong>4 degrees of controlled motion</strong> and a <strong>34% weight reduction</strong> by engineering 3D-printed iterations of a deltoid-driven actuation system in Fusion 360.</li>
+              <li>Integrated EMG electrodes with an Arduino microcontroller to translate muscle signals into bicep/tricep and grip actuation.</li>
+            </ul>
+          </div>
+          <div class="tags"><span class="tag">Prosthetics</span><span class="tag">EMG</span><span class="tag">Fusion 360</span><span class="tag">Arduino</span><span class="tag">Team Lead</span></div>
         </div>
       </div>
 
@@ -266,7 +294,7 @@
         <div class="entry-date">Aug 2023<br/>Jan 2026</div>
         <div class="entry-body">
           <div class="entry-org">International Young Physicists' Tournament</div>
-          <div class="entry-role">Captain — 1st Hong Kong Team at 37th IYPT, Budapest</div>
+          <div class="entry-role">Captain — 1st Hong Kong Team at 37th IYPT, Budapest (Jan–Jul 2024)</div>
           <div class="entry-desc">
             Champion of the Hong Kong Young Physicists' Tournament (HKYPT); selected as Captain for Hong Kong's debut team at the 37th IYPT in Budapest. Collaborated with professors at HKU, HKUST, and CUHK to develop theoretical models and conduct physics experiments. President of the HKYPT club; subsequently coached school teams for two years.
           </div>
@@ -280,7 +308,7 @@
           <div class="entry-org">City University of Hong Kong</div>
           <div class="entry-role">Research Intern &nbsp;·&nbsp; Advisor: Prof. Bee Luan Khoo</div>
           <div class="entry-desc">
-            Worked on AI-enabled disease stratification. Developed a YOLOv5-based algorithm for detection and classification of bacteria colony-forming units (CFUs); cultured bacteria strains and prepared labelled datasets for training, validation, and testing.
+            Automated detection and classification of bacterial colonies across 5 strains with <strong>91% mAP@0.5</strong> using YOLOv5 — culturing strains, annotating 1,200 images, and building the full training pipeline, reducing manual colony-counting time by ~90%.
           </div>
           <div class="tags"><span class="tag">YOLOv5</span><span class="tag">CNNs</span><span class="tag">Cell Culture</span><span class="tag">OpenCV</span></div>
         </div>
@@ -292,7 +320,7 @@
           <div class="entry-org">The Chinese University of Hong Kong</div>
           <div class="entry-role">Research Intern &nbsp;·&nbsp; Advisor: Prof. Huating Wang</div>
           <div class="entry-desc">
-            Studied changes in muscle cells during their regenerative process. Performed PCR on murine samples for ATF-3 gene expression, nucleic acid electrophoresis, and isolation of primary human skeletal muscle cells with FACS sample preparation.
+            Performed PCR and gel electrophoresis on 13 mouse samples to assess ATF3 expression and isolated primary human skeletal muscle cells for FACS analysis, supporting research on muscle regeneration.
           </div>
           <div class="tags"><span class="tag">PCR/qPCR</span><span class="tag">FACS</span><span class="tag">Muscle Biology</span></div>
         </div>
@@ -302,11 +330,16 @@
         <div class="entry-date">Jun 2023<br/>Jul 2023</div>
         <div class="entry-body">
           <div class="entry-org">MediConcepts Limited</div>
-          <div class="entry-role">Product Operations Intern</div>
+          <div class="entry-role">Assistant to Managing Director (Intern)</div>
           <div class="entry-desc">
-            Worked with the Managing Director at a global medical device design and manufacturing company. Conducted instrument insertion and retraction force testing on GBS and MDDP cartridges; pitched AI platform integrations to improve operational efficiency; attended the 2023 Hamlyn Robotics Symposium.
+            Global medical device design and manufacturing company, Hong Kong.
+            <ul>
+              <li>Executed insertion and retraction force verification testing on 240 GBS and MDDP diagnostic cartridges against product specifications (≤25 N insertion, ≥8 N retraction), identifying 6 non-conforming units (~2.5%) to support QC lot release.</li>
+              <li>Documented results in Excel and supported root-cause analysis, tracing failures to fixture misalignment and standardising the test setup.</li>
+              <li>Proposed an AI tooling strategy to the Managing Director projected to save 1,000 hours annually across the 13-person firm; attended the 2023 Hamlyn Robotics Symposium.</li>
+            </ul>
           </div>
-          <div class="tags"><span class="tag">Medical Devices</span><span class="tag">QC Testing</span><span class="tag">AI Integration</span></div>
+          <div class="tags"><span class="tag">Medical Devices</span><span class="tag">V&amp;V Testing</span><span class="tag">Root Cause Analysis</span><span class="tag">AI Integration</span></div>
         </div>
       </div>
 
@@ -324,11 +357,11 @@
         <div class="entry-date">Aug 2025<br/>May 2029</div>
         <div class="entry-body">
           <div class="entry-org">Duke University</div>
-          <div class="entry-role">B.S.E. Biomedical Engineering &amp; Electrical &amp; Computer Engineering · Minor: Economics</div>
+          <div class="entry-role">B.S.E. Biomedical Engineering &amp; Electrical &amp; Computer Engineering · Minor: Neuroscience</div>
           <div class="entry-desc">
-            Pratt School of Engineering. Active in Duke MEDesign (Project Lead), Engineering Student Government (Deputy Treasurer), Duke eNABLE, Bass Connections, Tata Research Lab, Hong Kong Student Association (Executive Board), Duke University Cricket Club (Logistics Chair), and Round Table SLG.
+            Pratt School of Engineering. Active in Duke MEDesign (Project Lead), Duke eNABLE (Team Lead), Engineering Student Government (Deputy Treasurer), Duke Motorsports (Senior Engineer), Bass Connections, Duke Institute for Brain Sciences, Tata Research Lab, Hong Kong Student Association (Treasurer), Duke University Cricket Club (Logistics Chair), Round Table SLG, and 2026 YC Startup School.
           </div>
-          <div class="tags"><span class="tag">BME</span><span class="tag">ECE</span><span class="tag">Economics</span><span class="tag">Durham, NC</span></div>
+          <div class="tags"><span class="tag">BME</span><span class="tag">ECE</span><span class="tag">Neuroscience</span><span class="tag">Durham, NC</span></div>
         </div>
       </div>
 
@@ -338,7 +371,7 @@
           <div class="entry-org">Island School</div>
           <div class="entry-role">IGCSE &amp; International Baccalaureate · Hong Kong</div>
           <div class="entry-desc">
-            Head Student (Head Boy), representing 1,300+ students as ESF Student Council Chair and Island School Council Board Member. Restructured Student Council to promote DEI; managed $13,000 student budget. ESF Chairman's Awards for Excellence for Outstanding Leadership; 3× Principal's Medal for Academic Excellence; Champion of HKYPT.
+            Head Student (Head Boy), representing 1,300+ students as ESF Student Council Chair and Island School Council Board Member. Restructured Student Council to promote DEI; managed $13,000 student budget. ESF Chairman's Award for Excellence for Outstanding Leadership; 3× Principal's Medal for Academic Excellence; Champion of HKYPT and Captain of Team Hong Kong at IYPT; HKU Academy for the Talented Member.
           </div>
           <div class="tags"><span class="tag">Head Student</span><span class="tag">IB</span><span class="tag">Hong Kong</span></div>
         </div>
@@ -365,8 +398,9 @@
     <div class="pub-list">
       <div class="pub">
         <div class="pub-title">Cervical Spine Posture Monitoring using Flex and IMU Sensors with Long Short Term Memory Networks</div>
-        <div class="pub-venue">Jan 2026 &nbsp;·&nbsp; Springer Series on Advances in Data-driven Computing and Intelligent Systems</div>
-        <div class="pub-authors">Arnav Gupta et al.</div>
+        <div class="pub-venue">Jan 2026 &nbsp;·&nbsp; Springer Lecture Notes in Networks and Systems — Advances in Data-driven Computing and Intelligent Systems (peer-reviewed)</div>
+        <div class="pub-authors">Arnav Gupta et al. &nbsp;·&nbsp; First author</div>
+        <div class="pub-desc">Designed an Arduino-based wearable integrating 3 flex sensors, an IMU, Bluetooth, and haptic feedback in a 3D-printed PLA enclosure and TPU neck band. Trained an LSTM on 3,400 samples (82% test accuracy) and validated it in a 20-participant study (79% real-world accuracy).</div>
       </div>
     </div>
   </section>
@@ -378,12 +412,12 @@
     <p class="section-label" id="news-label">News</p>
     <ul class="news-list" role="list">
       <li class="news-item">
-        <span class="news-date">May 2026</span>
-        <span class="news-text">Joined Duke Institute for Brain Sciences as Undergraduate Research Intern and co-founded a stealth startup as Founder &amp; CTO.</span>
+        <span class="news-date">Aug 2026</span>
+        <span class="news-text">Joined Bass Connections as Medical Device Engineer to design a $5 gastroschisis device for infants in Uganda, in partnership with Duke School of Medicine, Makerere University, and ShiShi International.</span>
       </li>
       <li class="news-item">
         <span class="news-date">May 2026</span>
-        <span class="news-text">Joined Bass Connections to prototype a low-cost Gastroschisis device in partnership with Makerere University and ShiShi International.</span>
+        <span class="news-text">Joined Duke Institute for Brain Sciences as Neurocomputational Researcher — open-sourced a Python toolbox for 23 structural &amp; functional MRI metrics — and co-founded a stealth startup as Founder &amp; CTO.</span>
       </li>
       <li class="news-item">
         <span class="news-date">Jan 2026</span>
@@ -395,7 +429,11 @@
       </li>
       <li class="news-item">
         <span class="news-date">Oct 2025</span>
-        <span class="news-text">Took on Project Team Lead role at Duke MEDesign, heading a 7-person team on a novel GI endoscopy stabilisation device.</span>
+        <span class="news-text">Took on Project Team Lead role at Duke MEDesign, heading a 7-engineer team on a low-cost GI endoscopy anchor.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Sep 2025</span>
+        <span class="news-text">Became Project Leyman Team Lead at Duke eNABLE, leading design of an EMG-controlled upper-limb prosthetic.</span>
       </li>
       <li class="news-item">
         <span class="news-date">Aug 2025</span>
@@ -417,6 +455,7 @@
       <div class="award-item"><span class="award-name">ESF Chairman's Award for Excellence for Outstanding Leadership</span><span class="award-year">2025</span></div>
       <div class="award-item"><span class="award-name">Island School Principal's Medal for Academic Excellence (×3)</span><span class="award-year">2023–25</span></div>
       <div class="award-item"><span class="award-name">Champion, Hong Kong Young Physicists' Tournament (HKYPT)</span><span class="award-year">2024</span></div>
+      <div class="award-item"><span class="award-name">Captain, Team Hong Kong — 37th International Young Physicists' Tournament (IYPT)</span><span class="award-year">2024</span></div>
       <div class="award-item"><span class="award-name">HKU Academy for the Talented — Member</span><span class="award-year">2024</span></div>
       <div class="award-item"><span class="award-name">Award for Young People (AYP) Silver Recipient</span><span class="award-year">2024</span></div>
       <div class="award-item"><span class="award-name">First Runner-Up, PolyU Engineering Project Competition</span><span class="award-year">2024</span></div>
@@ -431,23 +470,64 @@
   <!-- ── Skills ── -->
   <section aria-labelledby="skills-label">
     <p class="section-label" id="skills-label">Skills</p>
-    <div class="skills-row">
-      <span class="tag">Python</span>
-      <span class="tag">NumPy</span>
-      <span class="tag">OpenCV</span>
-      <span class="tag">PyTorch</span>
-      <span class="tag">CNN / Deep Learning</span>
-      <span class="tag">YOLOv5</span>
-      <span class="tag">Bioinformatics</span>
-      <span class="tag">Cell &amp; Bacterial Culture</span>
-      <span class="tag">PCR / qPCR</span>
-      <span class="tag">FACS</span>
-      <span class="tag">DIC Microscopy</span>
-      <span class="tag">Fluorescence Microscopy</span>
-      <span class="tag">CAD / CAM</span>
-      <span class="tag">Medical Device Prototyping</span>
-      <span class="tag">Hindi</span>
-      <span class="tag">Mandarin Chinese</span>
+    <div class="skills-groups">
+      <div class="skills-group">
+        <div class="skills-group-label">CAD &amp; Fabrication</div>
+        <div class="skills-row">
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Fusion 360</span>
+          <span class="tag">FEA</span>
+          <span class="tag">GD&amp;T</span>
+          <span class="tag">3D Printing (FDM/SLA)</span>
+          <span class="tag">CNC</span>
+          <span class="tag">Laser Cutting</span>
+          <span class="tag">Rapid Prototyping</span>
+          <span class="tag">Medical Device Design</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <div class="skills-group-label">Electrical &amp; Software</div>
+        <div class="skills-row">
+          <span class="tag">Python</span>
+          <span class="tag">C/C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">CNNs / YOLOv5</span>
+          <span class="tag">LSTM</span>
+          <span class="tag">Image Segmentation</span>
+          <span class="tag">fMRI / DTI</span>
+          <span class="tag">Arduino / Embedded</span>
+          <span class="tag">PCB Design (KiCad)</span>
+          <span class="tag">Soldering</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <div class="skills-group-label">Testing, Quality &amp; Lab</div>
+        <div class="skills-row">
+          <span class="tag">Verification &amp; Validation</span>
+          <span class="tag">Force Testing</span>
+          <span class="tag">DOE</span>
+          <span class="tag">Root Cause Analysis</span>
+          <span class="tag">Design Documentation</span>
+          <span class="tag">Aseptic Technique</span>
+          <span class="tag">Cell &amp; Bacterial Culture</span>
+          <span class="tag">CFU Assays</span>
+          <span class="tag">PCR / qPCR</span>
+          <span class="tag">Gel Electrophoresis</span>
+          <span class="tag">FACS</span>
+          <span class="tag">DIC / Fluorescence Microscopy</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <div class="skills-group-label">Languages</div>
+        <div class="skills-row">
+          <span class="tag">English</span>
+          <span class="tag">Hindi</span>
+          <span class="tag">Mandarin Chinese</span>
+        </div>
+      </div>
     </div>
   </section>
 
